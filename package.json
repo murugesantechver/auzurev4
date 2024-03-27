@@ -1,0 +1,24 @@
+{
+  "name": "auzurev4",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "clean": "rimraf dist",
+    "prestart": "npm run clean && npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0-alpha.13",
+    "azure-aws-serverless-express": "^0.1.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.x",
+    "rimraf": "^5.0.0",
+    "typescript": "^4.0.0"
+  },
+  "main": "dist/src/functions/*.js"
+}
